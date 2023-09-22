@@ -3,6 +3,7 @@ export enum Chain {
   ETH_GOERLI = 5,
   OPTIMISM = 10,
   BSC = 56,
+  BSCTEST = 97,
   POLYGON = 137,
   ZKSYNC = 324,
   ARBITRUM = 42161,
@@ -33,6 +34,10 @@ const ChainConfig: Record<Chain, TChainConfig> = {
   [Chain.BSC]: {
     name: "BSC",
     explorer: "https://bscscan.com/",
+  },
+  [Chain.BSCTEST]: {
+    name: "BSCTEST",
+    explorer: "https://testnet.bscscan.com/",
   },
   [Chain.AVALANCHE]: {
     name: "Avalanche",
