@@ -9,6 +9,8 @@ export enum Chain {
   ARBITRUM = 42161,
   AVALANCHE = 43114,
   ETH_SEPOLIA = 11155111,
+  LINEA = 59144,
+  LINEA_GOERLI = 59140,
 }
 
 type TChainConfig = {
@@ -60,6 +62,16 @@ const ChainConfig: Record<Chain, TChainConfig> = {
   [Chain.ETH_SEPOLIA]: {
     name: "Sepolia",
     explorer: "https://sepolia.etherscan.io/",
+    testnet: true,
+  },
+  [Chain.LINEA]: {
+    name: "Linea",
+    explorer: "https://lineascan.build//",
+    testnet: false,
+  },
+  [Chain.LINEA_GOERLI]: {
+    name: "Linea Goerli",
+    explorer: "https://goerli.lineascan.build/",
     testnet: true,
   },
 };

@@ -7,8 +7,10 @@ import {
   polygon,
   zkSync,
   avalanche,
-  bscTestnet
+  bscTestnet,
 } from "viem/chains";
+import {lineaTestnet} from '@wagmi/chains'
+
 
 import { Chain } from "./chains";
 
@@ -22,7 +24,9 @@ const ChainWagmiMap: Record<Chain, WagmiChain> = {
   [Chain.ETHEREUM]: mainnet,
   [Chain.ETH_GOERLI]: goerli,
   [Chain.ETH_SEPOLIA]: sepolia,
-  [Chain.BSCTEST]: bscTestnet
+  [Chain.BSCTEST]: bscTestnet,
+  [Chain.LINEA]: lineaTestnet,
+  [Chain.LINEA_GOERLI]: lineaTestnet,
 };
 
 export const toWagmiChain = (chain: Chain) => ChainWagmiMap[chain];

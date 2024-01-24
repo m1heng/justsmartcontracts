@@ -20,7 +20,8 @@ export const SupportedChains = [
   Chain.OPTIMISM,
   Chain.POLYGON,
   Chain.ZKSYNC,
-  Chain.BSCTEST
+  Chain.BSCTEST,
+  Chain.LINEA_GOERLI
 ];
 
 const useCurrentChainStore = create<State & Actions>()(
