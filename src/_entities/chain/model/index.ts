@@ -17,6 +17,7 @@ export const SupportedChains = [
   Chain.ARBITRUM,
   Chain.AVALANCHE,
   Chain.BSC,
+  Chain.LINEA,
   Chain.OPTIMISM,
   Chain.POLYGON,
   Chain.ZKSYNC,
